@@ -1758,7 +1758,13 @@ CHÚ Ý: Khi xoá nhóm và cảnh, HC cần xoá tất cả các event trigger 
         "SUCCESS": ["b717f8d8-6f18-43c0-ae46-69c32998f653"],
         "FAILED": ["b717f8d8-6f18-43c0-ae46-69c32998f653"]
       }
-    ]
+    ],
+    "EVENT_TRIGGER": [
+      {
+        "EVENT_TRIGGER_ID": "b717f8d8-6f18-43c0-ae46-69c32998f653",
+	"STATUS": "SUCCESS"	
+      }
+    ],
   }
 }
 ```
