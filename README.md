@@ -1730,7 +1730,8 @@ Luồng xoá thiết bị cần được thực hiện độc lập và không �
   "CMD": "DELETE_ROOM",
   "DATA": {
     "GROUPS": ["b717f8d8-6f18-43c0-ae46-69c32998f653"],
-    "SCENES": ["b717f8d8-6f18-43c0-ae46-69c32998f653"]
+    "SCENES": ["b717f8d8-6f18-43c0-ae46-69c32998f653"],
+    "EVENT_TRIGGER": ["b717f8d8-6f18-43c0-ae46-69c32998f653", "b717f8d8-6f18-43c0-ae46-69c32998f653"]
   }
 }
 ```
