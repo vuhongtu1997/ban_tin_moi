@@ -996,7 +996,6 @@ Bản tin cần được tối ưu:
     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "LUX": [200, 600],
-    "HANG_ON_TIME": 1,
     "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
   }
 }
@@ -1012,9 +1011,7 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
   "DATA": {
     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "LUX": [200, 600],
-    "HANG_ON_TIME": 1,
     "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
   }
 }
@@ -1031,10 +1028,8 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
   "CMD": "EDIT_SCENE_FOR_SENSOR_LIGHT_PIR",
   "DATA": {
     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "LUX": [200, 600],
-    "HANG_ON_TIME": 1,
     "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
   }
 }
@@ -1047,10 +1042,8 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
   "CMD": "EDIT_SCENE_FOR_SENSOR_LIGHT_PIR",
   "DATA": {
     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "LUX": [200, 600],
-    "HANG_ON_TIME": 1,
     "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
   }
 }
@@ -1067,7 +1060,8 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
   "CMD": "REMOVE_SCENE_FOR_SENSOR_LIGHT_PIR",
   "DATA": {
     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
+    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
   }
 }
 ```
@@ -1079,7 +1073,8 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
   "CMD": "REMOVE_SCENE_FOR_SENSOR_LIGHT_PIR",
   "DATA": {
     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
+    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
   }
 }
 ```
