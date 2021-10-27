@@ -1803,6 +1803,29 @@ Bản tin reset dữ liệu HC từ APP:
 }
 ```
 
+### OTA HC
+
+Bản tin App gửi cho HC khi app phát hiện ra bản cập nhật HC mới
+
+```json
+{
+  "CMD": "UPDATE_FIRMWARE",
+  "DATA": [
+    {
+      "NAME": "V1.0.2",
+      "CHECK_SUM": "AFJDJE:KHJKLHALKFHJLK:JER",
+      "LINK": "https://jsoneditoronline.org/V1.0.2"
+    },
+    {
+      "NAME": "V1.0.3",
+      "CHECK_SUM": "AFJDJE:KHJKLHALKFHJLK:JER",
+      "LINK": "https://jsoneditoronline.org/V1.0.3"
+    }
+  ]
+}
+```
+Khi HC gửi Version hiện tại của HC App kiêm tra Ver HC hiện tại có phải là vẻ mới chất chưa nếu chứa thì gửi lại cho HC các Ver HC mới hơn Ver hiện tại của HC
+
 ## CÁC THIẾT BỊ SMART HOME
 
 Trong phần này, một số thiết bị cảm biến đã được mô tả trong mục BẢN TIN ĐIỀU KHIỂN - SENSOR
