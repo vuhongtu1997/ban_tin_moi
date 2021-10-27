@@ -1814,12 +1814,12 @@ Bản tin App gửi cho HC khi app phát hiện ra bản cập nhật HC mới
     {
       "NAME": "V1.0.2",
       "CHECK_SUM": "AFJDJE:KHJKLHALKFHJLK:JER",
-      "LINK": "https://jsoneditoronline.org/V1.0.2"
+      "URL": "https://jsoneditoronline.org/V1.0.2"
     },
     {
       "NAME": "V1.0.3",
       "CHECK_SUM": "AFJDJE:KHJKLHALKFHJLK:JER",
-      "LINK": "https://jsoneditoronline.org/V1.0.3"
+      "URL": "https://jsoneditoronline.org/V1.0.3"
     }
   ]
 }
