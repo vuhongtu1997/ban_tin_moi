@@ -991,14 +991,14 @@ Bản tin cần được tối ưu:
 
 ```json
 {
-  "CMD": "SCENE_FOR_SENSOR_LIGHT_PIR",
-  "DATA": {
-    "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "LUX": [200, 600],
-    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
-  }
-}
+   "CMD": "SCENE_FOR_SENSOR_LIGHT_PIR",
+   "DATA": {
+     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+     "SCENE_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2",
+     "PIR_VALUE": 1,
+     "LUX": [200, 600]
+   }
+ }
 ```
 
 2. Json phản hồi
@@ -1007,13 +1007,13 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 
 ```json
 {
-  "CMD": "SCENE_FOR_SENSOR_LIGHT_PIR",
-  "DATA": {
-    "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "LUX": [200, 600],
-    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
-  }
+   "CMD": "SCENE_FOR_SENSOR_LIGHT_PIR",
+   "DATA": {
+     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+     "SCENE_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2",
+     "PIR_VALUE": 1,
+     "LUX": [200, 600]
+   }
 }
 ```
 
@@ -1025,13 +1025,13 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 
 ```json
 {
-  "CMD": "EDIT_SCENE_FOR_SENSOR_LIGHT_PIR",
-  "DATA": {
-    "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "LUX": [200, 600],
-    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
-  }
+   "CMD": "EDIT_SCENE_FOR_SENSOR_LIGHT_PIR",
+   "DATA": {
+     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+     "SCENE_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2",
+     "PIR_VALUE": 1,
+     "LUX": [200, 600]
+   }
 }
 ```
 
@@ -1039,13 +1039,13 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 
 ```json
 {
-  "CMD": "EDIT_SCENE_FOR_SENSOR_LIGHT_PIR",
-  "DATA": {
-    "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "LUX": [200, 600],
-    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
-  }
+   "CMD": "SCENE_FOR_SENSOR_LIGHT_PIR",
+   "DATA": {
+     "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+     "SCENE_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2",
+     "PIR_VALUE": 1,
+     "LUX": [200, 600]
+   }
 }
 ```
 
@@ -1058,11 +1058,17 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 ```json
 {
   "CMD": "REMOVE_SCENE_FOR_SENSOR_LIGHT_PIR",
-  "DATA": {
-    "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
-  }
+  "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+  "DATA": [
+    {
+      "PIR_VALUE": 0,
+      "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2"
+    },
+    {
+      "PIR_VALUE": 1,
+      "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2"
+    }
+  ]
 }
 ```
 
@@ -1071,11 +1077,17 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 ```json
 {
   "CMD": "REMOVE_SCENE_FOR_SENSOR_LIGHT_PIR",
-  "DATA": {
-    "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
-    "AFTER_PIR_SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
-  }
+  "DEVICE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+  "DATA": [
+    {
+      "PIR_VALUE": 0,
+      "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2"
+    },
+    {
+      "PIR_VALUE": 1,
+      "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2-  b70fa5c10fb2"
+    }
+  ]
 }
 ```
 
