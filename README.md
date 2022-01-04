@@ -1095,6 +1095,8 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 }
 ```
 
+## Cập nhật 4/1/2022
+
 ## SCENE - SCREEN
 
 - Bỏ trường TYPE và điều chỉnh câu lệnh tương ứng cho từng trường hợp
@@ -1109,16 +1111,18 @@ Giống bản tin gửi đi nhưng có thêm trường EVENT_TRIGGER_ID để ph
 
 ```json
 {
-  "CMD": "ADD_SCENE_FOR_SCREEN",
+  "CMD": "SCENE_FOR_SCREEN",
   "DATA": {
-    "DEVICE_ID": "",
+    "DEVICE_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d",
+	"ROOM_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d",
     "SCENES": [
       {
         "SCENE_ID": "abc-cde",
         "SCENE_NAME": "123",
         "SCENE_ICON": 1
       }
-    ]
+    ],
+	"DEL_SCENES" : [ "27800a3a-311d-4547-b25e-a8542073d919" ]
   }
 }
 ```
@@ -1129,40 +1133,9 @@ HC phản hồi lại trạng thái gán cảnh: SUCCESS hoặc FAILED
 
 ```json
 {
-  "CMD": "ADD_SCENE_FOR_SCREEN",
+  "CMD": "SCENE_FOR_SCREEN",
   "DATA": {
-    "DEVICE_ID": "",
-    "STATUS": "SUCCESS"
-  }
-}
-```
-
-### Xóa cảnh cho màn hình
-
-1. Json mẫu
-
-```json
-{
-  "CMD": "DEL_SCENE_FOR_SCREEN",
-  "DATA": {
-    "DEVICE_ID": "",
-    "SCENES": [
-	"abc-cde",
-	"abc-cde"
-    ]
-  }
-}
-```
-
-2. Json phản hồi
-
-HC phản hồi lại trạng thái gán cảnh: SUCCESS hoặc FAILED
-
-```json
-{
-  "CMD": "DEL_SCENE_FOR_SCREEN",
-  "DATA": {
-    "DEVICE_ID": "",
+    "DEVICE_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d",
     "STATUS": "SUCCESS"
   }
 }
