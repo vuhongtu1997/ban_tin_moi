@@ -718,6 +718,7 @@ Xoá toàn bộ nhóm
   }
 }
 ```
+## Cập nhật ngày 4/1/2022
 
 ## SCENE
 
@@ -742,6 +743,7 @@ Chỉ được tạo một cảnh trong một bản tin
   "CMD": "CREATE_SCENE",
   "DATA": {
     "SCENE_ID": "aa3549d4-5471-4d75-b0b2-b70fa5c10fb2",
+    "ROOM_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "DEVICES": [
       {
         "DEVICE_TYPE_ID": 12001,
@@ -799,6 +801,7 @@ Bản tin này có thể được sử dụng cho việc "retry" khi có một h
   "CMD": "EDIT_SCENE",
   "DATA": {
     "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+    "ROOM_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "DEVICES": [
       {
         "DEVICE_TYPE_ID": 12001,
@@ -850,7 +853,8 @@ Khi xoá cảnh, app chỉ định ID cảnh được xoá.
 {
   "CMD": "DELETE_SCENE",
   "DATA": {
-    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2"
+    "SCENE_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
+    "ROOM_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
   }
 }
 ```
@@ -1443,7 +1447,7 @@ Giống bản tin tạo nhưng thay đổi CMD -> EDIT_HCL
 
 ```json
 {
-  "CMD": "HCL_RULE_STATUS",
+  "CMD": "HCL_RULE_STATUS",
   "DATA": {
     "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "STATUS": 1,
@@ -1459,7 +1463,7 @@ Giống bản tin tạo nhưng thay đổi CMD -> EDIT_HCL
 
 ```json
 {
-  "CMD": "HCL_RULE_STATUS",
+  "CMD": "HCL_RULE_STATUS",
   "DATA": {
     "EVENT_TRIGGER_ID": "aa3549d4-5471-4d75-b0b2- b70fa5c10fb2",
     "STATUS": "SUCCESS"
@@ -1783,6 +1787,38 @@ CHÚ Ý: Khi xoá nhóm và cảnh, HC cần xoá tất cả các event trigger 
   "CMD" : "CHECK_ROOM",
   "DATA" : {
     "ROOM_ID" : "273a7e38-93af-4c20-8092-30db15084873"
+  }
+}
+```
+
+### Cập nhật ngày 4/1/2022
+
+### Thiết bị SMART HOME
+
+1. Thêm thiết bị Smart Home vào phòng
+
+Sau khi HC nhận và xử lý thành công sẽ gửi lại bản tin phản hồi giống với bản tin APP -> HC
+
+```json
+{
+  "CMD": "ADD_DEVICE_SMARTHOME_TO_ROOM",
+  "DATA": {
+    "DEVICE_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d",
+    "ROOM_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d"
+  }
+}
+```
+
+2. Xóa thiết bị Smart Home ra khỏi phòng
+
+Sau khi HC nhận và xử lý thành công sẽ gửi lại bản tin phản hồi giống với bản tin APP -> HC
+
+```json
+{
+  "CMD": "REMOVE_DEVICE_SMARTHOME_FROM_ROOM",
+  "DATA": {
+    "DEVICE_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d",
+    "ROOM_ID": "00fb6241-66b2-fc30-8da2-5b0f5794e20d"
   }
 }
 ```
